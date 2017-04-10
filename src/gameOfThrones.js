@@ -16,7 +16,7 @@ function fetchCharacter(characterId) {
 		
 		catch (errors) {
 			console.log("Oh snap! An accident happened")
-		}	
+		}
 	});
 });
 }
