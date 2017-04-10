@@ -9,8 +9,14 @@ function fetchCharacter(characterId) {
 	});
 
 	response.on("end", function() {
+		try {
 			var data = JSON.parse(info);
 			console.log("\nCharacter: " + data.name + "\n\n" + "Title: " + data.titles[0] + "\n\nPlayed By: " + data.playedBy[0] + "\n\n");
+		}
+		
+		catch (errors) {
+			console.log("Oh snap! An accident happened")
+		}	
 	});
 });
 }
