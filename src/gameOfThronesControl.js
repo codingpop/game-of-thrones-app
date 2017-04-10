@@ -1,13 +1,13 @@
-var fetchCharacter = require('./gameOfThrones.js');
+'use strict'
 
-var processData = process.argv.slice(2);
+const fetchCharacter = require('./gameOfThrones.js');
 
-var args = [];
+const processData = process.argv.slice(2);
+
+const args = [];
 
 processData.forEach(function(value) {
 	args.push(value);
 });
-
-
 
 fetchCharacter.fetchCharacter(args[0]);
