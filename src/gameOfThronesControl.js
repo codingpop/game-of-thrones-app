@@ -1,0 +1,1 @@
+var fetchCharacter = require('./gameOfThrones.js');
